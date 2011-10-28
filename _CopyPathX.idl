@@ -1,0 +1,45 @@
+import "C:\Program Files\Microsoft SDKs\Windows\v7.0A\include\prsht.idl";
+import "C:\Program Files\Microsoft SDKs\Windows\v7.0A\include\mshtml.idl";
+import "c:\program files\microsoft sdks\windows\v7.0a\include\dimm.idl";
+import "c:\program files\microsoft sdks\windows\v7.0a\include\dispex.idl";
+import "C:\Program Files\Microsoft SDKs\Windows\v7.0A\include\mshtmhst.idl";
+import "c:\program files\microsoft sdks\windows\v7.0a\include\docobj.idl";
+import "C:\Program Files\Microsoft SDKs\Windows\v7.0A\include\exdisp.idl";
+import "C:\Program Files\Microsoft SDKs\Windows\v7.0A\include\objsafe.idl";
+import "C:\Program Files\Microsoft SDKs\Windows\v7.0A\include\shldisp.idl";
+import "C:\Program Files\Microsoft SDKs\Windows\v7.0A\include\shobjidl.idl";
+import "c:\program files\microsoft sdks\windows\v7.0a\include\prsht.idl";
+import "c:\program files\microsoft sdks\windows\v7.0a\include\propsys.idl";
+import "c:\program files\microsoft sdks\windows\v7.0a\include\StructuredQueryCondition.idl";
+import "c:\program files\microsoft sdks\windows\v7.0a\include\ObjectArray.idl";
+
+[
+	object,
+	uuid(D96F8104-CE33-4DA1-BA9E-E38A9F815CAF),
+	dual,
+	helpstring("ICopyPathContextMenu インターフェイス"),
+	pointer_default(unique)
+] 
+#line 39 "d:\\src\\fsproject\\trunk\\copypathx\\copypathcontextmenu.h"
+interface ICopyPathContextMenu : IDispatch {
+};
+
+
+[ version(1.0), uuid(D45236A6-A91C-4539-AE9F-29BD86B5A2D6), helpstring("CopyPathX 1.0 タイプ ライブラリ") ]
+library CopyPathX
+{
+	importlib("stdole2.tlb");
+	importlib("olepro32.dll");
+
+	[
+		version(1.0),
+		uuid(BE21F5FB-D683-43B1-959B-DB6A83B218CB),
+		helpstring("CopyPathContextMenu Class")
+	] 
+#line 54 "d:\\src\\fsproject\\trunk\\copypathx\\copypathcontextmenu.h"
+	coclass CCopyPathContextMenu {
+		[default] interface IUnknown;
+	};
+
+}
+

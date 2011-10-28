@@ -1,0 +1,25 @@
+HKCR
+{
+	CopyPathX.CopyPathContextMenu.1 = s 'CopyPathContextMenu Class'
+	{
+		CLSID = s '{BE21F5FB-D683-43B1-959B-DB6A83B218CB}'
+	}
+	CopyPathX.CopyPathContextMenu = s 'CopyPathContextMenu Class'
+	{
+		CLSID = s '{BE21F5FB-D683-43B1-959B-DB6A83B218CB}'
+		CurVer = s 'CopyPathX.CopyPathContextMenu.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {BE21F5FB-D683-43B1-959B-DB6A83B218CB} = s 'CopyPathContextMenu Class'
+		{
+			ProgID = s 'CopyPathX.CopyPathContextMenu.1'
+			VersionIndependentProgID = s 'CopyPathX.CopyPathContextMenu'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{D45236A6-A91C-4539-AE9F-29BD86B5A2D6}'
+		}
+	}
+}
